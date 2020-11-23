@@ -1,0 +1,50 @@
+body {
+    font-family: "Open Sans";
+    text-align: center;
+  }
+
+/* Headings */
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+    color: #4285F4 !important;
+}
+
+/* Jumbotron */
+
+.lead {
+    font-size: 2em;
+}
+
+.jumbotron {
+    background: linear-gradient(0.45turn, rgb(140,213,147), rgb(137, 175, 189));
+}
+
+.jumbotron .container {
+    padding: 2rem 2rem;
+    color: white;
+}
+
+/* tab bar */
+
+.nav-link {
+    color: black;
+}
+
+.nav-pills .nav-link.active {
+    color: black;
+    background-color: transparent;
+    border-bottom: solid;
+}
+
+.fa-fire, .fa-star {
+    color: red;
+}
+
+/* footer */
+
+#footer {
+    padding: 1em;
+    background-color: lightgray;
+}
