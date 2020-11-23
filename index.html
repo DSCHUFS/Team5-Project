@@ -31,6 +31,8 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
 
+    <!-- scripts -->
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
@@ -54,11 +56,24 @@
                     <a class="nav-link" href="">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="" tabindex="-1" aria-disabled="true">로그인</a>
+                    <a class="nav-link" href="" onclick="openSearch()"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-dark btn-sm" href="" tabindex="-1" aria-disabled="true" role="button">로그인</a>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <!-- Search Box -->
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">X</span>
+        <div class="overlay-content">
+            <form action="action_page.php">
+                <input type="text" name="search" placeholder="검색어를 입력하세요">
+            </form>
+        </div>
+    </div>
 
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
@@ -99,17 +114,18 @@
                                                     fill="#eceeef" dy=".3em">Thumbnail</text>
                                             </svg>
                                             <div class="card-body">
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                    a natural lead-in to additional content. This content is a little
-                                                    bit longer.</p>
+                                                <h4>게시글 제목</h4>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                                <hr>
                                                 <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">View</button>
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    <div>
+                                                        <img src="images/profile.jpg" alt="" class="rounded-circle" width="30px">
+                                                        <span>nickname</span>
                                                     </div>
-                                                    <small class="text-muted">9 mins</small>
+                                                    <div>
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>26</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -124,22 +140,22 @@
                                                     fill="#eceeef" dy=".3em">Thumbnail</text>
                                             </svg>
                                             <div class="card-body">
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                    a natural lead-in to additional content. This content is a little
-                                                    bit longer.</p>
+                                                <h4>게시글 제목</h4>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                                <hr>
                                                 <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">View</button>
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    <div>
+                                                        <img src="images/profile.jpg" alt="" class="rounded-circle" width="30px">
+                                                        <span>nickname</span>
                                                     </div>
-                                                    <small class="text-muted">9 mins</small>
+                                                    <div>
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>26</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4">
+                                    </div><div class="col-md-4">
                                         <div class="card mb-4 shadow-sm">
                                             <svg class="bd-placeholder-img card-img-top" width="100%" height="150"
                                                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
@@ -149,93 +165,18 @@
                                                     fill="#eceeef" dy=".3em">Thumbnail</text>
                                             </svg>
                                             <div class="card-body">
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                    a natural lead-in to additional content. This content is a little
-                                                    bit longer.</p>
+                                                <h4>게시글 제목</h4>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                                <hr>
                                                 <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">View</button>
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    <div>
+                                                        <img src="images/profile.jpg" alt="" class="rounded-circle" width="30px">
+                                                        <span>nickname</span>
                                                     </div>
-                                                    <small class="text-muted">9 mins</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="card mb-4 shadow-sm">
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="150"
-                                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                                                <title>Placeholder</title>
-                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
-                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
-                                            </svg>
-                                            <div class="card-body">
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                    a natural lead-in to additional content. This content is a little
-                                                    bit longer.</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">View</button>
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    <div>
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>26</span>
                                                     </div>
-                                                    <small class="text-muted">9 mins</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card mb-4 shadow-sm">
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="150"
-                                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                                                <title>Placeholder</title>
-                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
-                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
-                                            </svg>
-                                            <div class="card-body">
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                    a natural lead-in to additional content. This content is a little
-                                                    bit longer.</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">View</button>
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
-                                                    </div>
-                                                    <small class="text-muted">9 mins</small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card mb-4 shadow-sm">
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="150"
-                                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                                                <title>Placeholder</title>
-                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
-                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
-                                            </svg>
-                                            <div class="card-body">
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                    a natural lead-in to additional content. This content is a little
-                                                    bit longer.</p>
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">View</button>
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
-                                                    </div>
-                                                    <small class="text-muted">9 mins</small>
                                                 </div>
                                             </div>
                                         </div>
@@ -251,21 +192,73 @@
                                                     fill="#eceeef" dy=".3em">Thumbnail</text>
                                             </svg>
                                             <div class="card-body">
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                    a natural lead-in to additional content. This content is a little
-                                                    bit longer.</p>
+                                                <h4>게시글 제목</h4>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                                <hr>
                                                 <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">View</button>
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    <div>
+                                                        <img src="images/profile.jpg" alt="" class="rounded-circle" width="30px">
+                                                        <span>nickname</span>
                                                     </div>
-                                                    <small class="text-muted">9 mins</small>
+                                                    <div>
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>26</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="col-md-4">
+                                        <div class="card mb-4 shadow-sm">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="150"
+                                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                                <title>Placeholder</title>
+                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
+                                            </svg>
+                                            <div class="card-body">
+                                                <h4>게시글 제목</h4>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                                <hr>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <img src="images/profile.jpg" alt="" class="rounded-circle" width="30px">
+                                                        <span>nickname</span>
+                                                    </div>
+                                                    <div>
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>26</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="col-md-4">
+                                        <div class="card mb-4 shadow-sm">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="150"
+                                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                                <title>Placeholder</title>
+                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
+                                            </svg>
+                                            <div class="card-body">
+                                                <h4>게시글 제목</h4>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                                <hr>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <img src="images/profile.jpg" alt="" class="rounded-circle" width="30px">
+                                                        <span>nickname</span>
+                                                    </div>
+                                                    <div>
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>26</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="col-md-4">
                                         <div class="card mb-4 shadow-sm">
                                             <svg class="bd-placeholder-img card-img-top" width="100%" height="150"
@@ -276,22 +269,22 @@
                                                     fill="#eceeef" dy=".3em">Thumbnail</text>
                                             </svg>
                                             <div class="card-body">
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                    a natural lead-in to additional content. This content is a little
-                                                    bit longer.</p>
+                                                <h4>게시글 제목</h4>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                                <hr>
                                                 <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">View</button>
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    <div>
+                                                        <img src="images/profile.jpg" alt="" class="rounded-circle" width="30px">
+                                                        <span>nickname</span>
                                                     </div>
-                                                    <small class="text-muted">9 mins</small>
+                                                    <div>
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>26</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4">
+                                    </div><div class="col-md-4">
                                         <div class="card mb-4 shadow-sm">
                                             <svg class="bd-placeholder-img card-img-top" width="100%" height="150"
                                                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
@@ -301,17 +294,43 @@
                                                     fill="#eceeef" dy=".3em">Thumbnail</text>
                                             </svg>
                                             <div class="card-body">
-                                                <p class="card-text">This is a wider card with supporting text below as
-                                                    a natural lead-in to additional content. This content is a little
-                                                    bit longer.</p>
+                                                <h4>게시글 제목</h4>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                                <hr>
                                                 <div class="d-flex justify-content-between align-items-center">
-                                                    <div class="btn-group">
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">View</button>
-                                                        <button type="button"
-                                                            class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    <div>
+                                                        <img src="images/profile.jpg" alt="" class="rounded-circle" width="30px">
+                                                        <span>nickname</span>
                                                     </div>
-                                                    <small class="text-muted">9 mins</small>
+                                                    <div>
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>26</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><div class="col-md-4">
+                                        <div class="card mb-4 shadow-sm">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="150"
+                                                xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
+                                                focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                                <title>Placeholder</title>
+                                                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%"
+                                                    fill="#eceeef" dy=".3em">Thumbnail</text>
+                                            </svg>
+                                            <div class="card-body">
+                                                <h4>게시글 제목</h4>
+                                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                                <hr>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div>
+                                                        <img src="images/profile.jpg" alt="" class="rounded-circle" width="30px">
+                                                        <span>nickname</span>
+                                                    </div>
+                                                    <div>
+                                                        <i class="fas fa-heart"></i>
+                                                        <span>26</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -327,37 +346,26 @@
             </div>
 
             <!-- Side bar -->
-            <aside class="col-md-4 blog-sidebar">
-                <div class="p-4 mb-3 bg-light rounded">
-                    <h4 class="font-italic">About</h4>
-                    <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur
-                        purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                </div>
-
-                <div class="p-4">
-                    <h4 class="font-italic">Archives</h4>
-                    <ol class="list-unstyled mb-0">
-                        <li><a href="#">March 2014</a></li>
-                        <li><a href="#">February 2014</a></li>
-                        <li><a href="#">January 2014</a></li>
-                        <li><a href="#">December 2013</a></li>
-                        <li><a href="#">November 2013</a></li>
-                        <li><a href="#">October 2013</a></li>
-                        <li><a href="#">September 2013</a></li>
-                        <li><a href="#">August 2013</a></li>
-                        <li><a href="#">July 2013</a></li>
-                        <li><a href="#">June 2013</a></li>
-                        <li><a href="#">May 2013</a></li>
-                        <li><a href="#">April 2013</a></li>
+            <aside class="col-md-4 blog-sidebar text-left">
+                <div class="p-2">
+                    <h5>인기 급상승 게시글</h5>
+                    <ol class="list-unstyled mb-4">
+                        <li><a href="#">1 Lorem ipsum dolor sit...</a></li>
+                        <li><a href="#">2 Lorem ipsum dolor sit...</a></li>
+                        <li><a href="#">3 Lorem ipsum dolor sit...</a></li>
+                        <li><a href="#">4 Lorem ipsum dolor sit...</a></li>
+                        <li><a href="#">5 Lorem ipsum dolor sit...</a></li>
                     </ol>
                 </div>
 
-                <div class="p-4">
-                    <h4 class="font-italic">Elsewhere</h4>
-                    <ol class="list-unstyled">
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
+                <div class="p-2">
+                    <h5>인기 태그</h5>
+                    <ol class="list-unstyled mb-4">
+                        <li><a href="#"># Lorem</a></li>
+                        <li><a href="#"># Ipsum</a></li>
+                        <li><a href="#"># aliquam</a></li>
+                        <li><a href="#"># Nulla</a></li>
+                        <li><a href="#"># fermentum</a></li>
                     </ol>
                 </div>
             </aside>
