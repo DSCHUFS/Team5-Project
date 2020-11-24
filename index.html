@@ -37,6 +37,17 @@
 
 <body>
 
+    <!-- Search Box -->
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+        <div class="overlay-content">
+            <i class="fas fa-search"></i>
+            <form action="action_page.php">
+                <input type="text" name="search" placeholder="검색어를 입력하세요">
+            </form>
+        </div>
+    </div>
+
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">UniVelog</a>
@@ -56,7 +67,7 @@
                     <a class="nav-link" href="">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="" onclick="openSearch()"><i class="fas fa-search"></i></a>
+                    <a class="nav-link" onclick="openSearch()"><i class="fas fa-search"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link btn btn-dark btn-sm" href="" tabindex="-1" aria-disabled="true" role="button">로그인</a>
@@ -64,16 +75,6 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Search Box -->
-    <div id="myOverlay" class="overlay">
-        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">X</span>
-        <div class="overlay-content">
-            <form action="action_page.php">
-                <input type="text" name="search" placeholder="검색어를 입력하세요">
-            </form>
-        </div>
-    </div>
 
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
