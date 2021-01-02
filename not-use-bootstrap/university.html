@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>UniVelog-한국외국어대학교</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5f03d8662e.js" crossorigin="anonymous"></script>
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- scripts -->
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <!-- Search Box -->
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay" style="cursor:pointer;">x</span>
+        <div class="overlay-content">
+            <i class="fas fa-search"></i>
+            <form action="#">
+                <input type="text" name="search" placeholder="검색어를 입력하세요">
+            </form>
+        </div>
+    </div>
+
+    <!-- Nav Bar -->
+    <div class="nav-bar">
+        <a href="index.html" class="title">UniVelog</a>
+        <ul class="nav-list">
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="universities.html" style="color: #34A853;">Universites</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a onclick="openSearch()" style="cursor:pointer;"><img src="images/search.png" width="20px"
+                        alt="검색"></a></li>
+            <li><a href="login.html" id="login">로그인</a></li>
+        </ul>
+    </div>
+
+    <!-- University info -->
+    <div class="university-background">
+        <h3>한국외국어대학교</h3>
+    </div>
+    <img class="university-img" src="images/HUFS.gif" width="200px" alt="한국외대 로고">
+    <div class="university-info">
+        <p>회원수 00명</p>
+        <p>게시글 00개</p>
+    </div>
+
+    <!-- Main -->
+    <div role="main" class="container">
+        <!-- Content -->
+        <div class="content">
+            <!-- Posts -->
+            <div id="Pop" class="posts">
+                <div class="card">
+                    <img src="images/thumbnail.png" alt="thumbnail" class="thumbnail">
+                    <h2>게시글1 제목</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="card-info">
+                        <div onclick="location.href ='profile.html'" style="cursor:pointer;">
+                            <img src="images/profile.jpg" width="30px" alt="프로필 이미지" class="profile">
+                            <span> ninckname</span>
+                        </div>
+                        <div>
+                            <img src="images/love.png" width="15px" alt="좋아요"><span> 100</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/thumbnail.png" alt="thumbnail" class="thumbnail">
+                    <h2>게시글2 제목</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="card-info">
+                        <div>
+                            <img src="images/profile.jpg" width="30px" alt="프로필 이미지" class="profile">
+                            <span> ninckname</span>
+                        </div>
+                        <div>
+                            <img src="images/love.png" width="15px" alt="좋아요"><span> 98</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/thumbnail.png" alt="thumbnail" class="thumbnail">
+                    <h2>게시글3 제목</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="card-info">
+                        <div>
+                            <img src="images/profile.jpg" width="30px" alt="프로필 이미지" class="profile">
+                            <span> ninckname</span>
+                        </div>
+                        <div>
+                            <img src="images/love.png" width="15px" alt="좋아요"><span> 96</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/thumbnail.png" alt="thumbnail" class="thumbnail">
+                    <h2>게시글4 제목</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="card-info">
+                        <div>
+                            <img src="images/profile.jpg" width="30px" alt="프로필 이미지" class="profile">
+                            <span> ninckname</span>
+                        </div>
+                        <div>
+                            <img src="images/love.png" width="15px" alt="좋아요"><span> 95</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/thumbnail.png" alt="thumbnail" class="thumbnail">
+                    <h2>게시글5 제목</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="card-info">
+                        <div>
+                            <img src="images/profile.jpg" width="30px" alt="프로필 이미지" class="profile">
+                            <span> ninckname</span>
+                        </div>
+                        <div>
+                            <img src="images/love.png" width="15px" alt="좋아요"><span> 92</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/thumbnail.png" alt="thumbnail" class="thumbnail">
+                    <h2>게시글6 제목</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="card-info">
+                        <div>
+                            <img src="images/profile.jpg" width="30px" alt="프로필 이미지" class="profile">
+                            <span> ninckname</span>
+                        </div>
+                        <div>
+                            <img src="images/love.png" width="15px" alt="좋아요"><span> 91</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/thumbnail.png" alt="thumbnail" class="thumbnail">
+                    <h2>게시글7 제목</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="card-info">
+                        <div>
+                            <img src="images/profile.jpg" width="30px" alt="프로필 이미지" class="profile">
+                            <span> ninckname</span>
+                        </div>
+                        <div>
+                            <img src="images/love.png" width="15px" alt="좋아요"><span> 90</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/thumbnail.png" alt="thumbnail" class="thumbnail">
+                    <h2>게시글8 제목</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="card-info">
+                        <div>
+                            <img src="images/profile.jpg" width="30px" alt="프로필 이미지" class="profile">
+                            <span> ninckname</span>
+                        </div>
+                        <div>
+                            <img src="images/love.png" width="15px" alt="좋아요"><span> 84</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/thumbnail.png" alt="thumbnail" class="thumbnail">
+                    <h2>게시글9 제목</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="card-info">
+                        <div>
+                            <img src="images/profile.jpg" width="30px" alt="프로필 이미지" class="profile">
+                            <span> ninckname</span>
+                        </div>
+                        <div>
+                            <img src="images/love.png" width="15px" alt="좋아요"><span> 80</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/thumbnail.png" alt="thumbnail" class="thumbnail">
+                    <h2>게시글10 제목</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="card-info">
+                        <div>
+                            <img src="images/profile.jpg" width="30px" alt="프로필 이미지" class="profile">
+                            <span> ninckname</span>
+                        </div>
+                        <div>
+                            <img src="images/love.png" width="15px" alt="좋아요"><span> 76</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/thumbnail.png" alt="thumbnail" class="thumbnail">
+                    <h2>게시글11 제목</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="card-info">
+                        <div>
+                            <img src="images/profile.jpg" width="30px" alt="프로필 이미지" class="profile">
+                            <span> ninckname</span>
+                        </div>
+                        <div>
+                            <img src="images/love.png" width="15px" alt="좋아요"><span> 71</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/thumbnail.png" alt="thumbnail" class="thumbnail">
+                    <h2>게시글12 제목</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="card-info">
+                        <div>
+                            <img src="images/profile.jpg" width="30px" alt="프로필 이미지" class="profile">
+                            <span> ninckname</span>
+                        </div>
+                        <div>
+                            <img src="images/love.png" width="15px" alt="좋아요"><span> 50</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Page buttons -->
+            <div class="page-buttons">
+                <a href="#" class="arrow" id="hide">&#8249;</a>
+                <a href="#" class="selected">1</a>
+                <a href="#" class="none">2</a>
+                <a href="#" class="none">3</a>
+                <a href="#" class="none">4</a>
+                <a href="#" class="none">5</a>
+                <a href="#" class="arrow">&#8250;</a>
+            </div>
+        </div>
+
+        <!-- Side bar -->
+        <div class="sidebar">
+            <ol class="sidebar-list">
+                <lh><span>업로드 Top 5</span></lh>
+                <li><a href=""><b>1</b> nickname 1</a></li>
+                <li><a href=""><b>2</b> nickname 2</a></li>
+                <li><a href=""><b>3</b> nickname 3</a></li>
+                <li><a href=""><b>4</b> nickname 4</a></li>
+                <li><a href=""><b>5</b> nickname 5</a></li>
+            </ol>
+            <ol class="sidebar-list">
+                <lh><span>인기 게시글</span></lh>
+                <li><a href="post.html"><b>1</b> Lorem ipsum dolor sit amet.</a></li>
+                <li><a href=""><b>2</b> Lorem ipsum dolor sit amet.</a></li>
+                <li><a href=""><b>3</b> Lorem ipsum dolor sit amet.</a></li>
+                <li><a href=""><b>4</b> Lorem ipsum dolor sit amet.</a></li>
+                <li><a href=""><b>5</b> Lorem ipsum dolor sit amet.</a></li>
+            </ol>
+            <ul class="sidebar-list">
+                <lh><span>인기 태그</span></lh>
+                <li><a href=""><b>#</b> Lorem</a></li>
+                <li><a href=""><b>#</b> Lorem</a></li>
+                <li><a href=""><b>#</b> Lorem</a></li>
+                <li><a href=""><b>#</b> Lorem</a></li>
+                <li><a href=""><b>#</b> Lorem</a></li>
+                <li><a href=""><u>더보기</u></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <span>Copyright © WH CHOI. All rights reserved.</span>
+    </footer>
+
+</body>
+
+</html>

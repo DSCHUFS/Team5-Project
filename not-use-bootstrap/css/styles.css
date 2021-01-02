@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
+* {
+    font-family: "Open Sans";
+    text-align: center;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-fire, .fa-star, .fa-heart {
+    color: red;
+}
+
+/* Search Box */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.overlay .closebtn:hover {
+    color: #ccc;
+}
+
+.overlay input[type=text] {
+    padding: 15px;
+    font-size: 30px;
+    border: none;
+    float: left;
+    width: 100%;
+    background: white;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.overlay input[type=text]:hover {
+    background: #f1f1f1;
+}
+
+.overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay button:hover {
+    background: #bbb;
+}
+
+/* Nav Bar */
+
+.nav-bar {
+    height: 70px;
+    position: relative;
+    border-bottom: 2px solid black;
+    box-shadow: 0px 1px 0px black;
+}
+
+.title {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    color: #4285F4;
+}
+
+.nav-list {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    list-style-type: none;
+}
+
+.nav-list li {
+    float: left;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+#login {
+    color: white;
+    background-color: black;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+/* index page */
+
+/* Jumbotron */
+
+.jumbotron {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0.45turn, rgb(140, 213, 147), rgb(137, 175, 189));
+    color: white;
+    font-size: 2rem;
+}
+
+/* Main */
+
+.container {
+    position: relative;
+    padding: 50px 100px;
+}
+
+.content {
+    width: 78%;
+    float: left;
+}
+
+.tab-bar {
+    text-align: left;
+}
+
+.tab-bar-button {
+    padding: 10px 10px;
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.tab-bar-button.active {
+    border-bottom: 3px solid black;
+}
+
+.posts {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.thumbnail {
+    margin: 1px;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+.card h2 {
+    text-align: left;
+    margin: 2px 10px;
+}
+
+.card p {
+    text-align: left;
+    margin: 2px 10px;
+}
+
+.card-info {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-info div {
+    margin: 5px 10px;
+    display: table;
+}
+
+.card-info div * {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 3px 5px;
+}
+
+.card-info .profile {
+    border-radius: 50%;
+}
+
+.card-info span {
+    font-weight: bold;
+}
+
+.sidebar {
+    width: 20%;
+    float: right;
+    margin-top: 50px;
+}
+
+.sidebar-list {
+    text-align: left;
+    margin: 10px 0px;
+    margin-bottom: 30px;
+    padding: 0px 0px 0px 5px;
+    list-style: none;
+}
+
+.sidebar-list lh {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.sidebar-list li {
+    text-align: left;
+    margin-top: 3px;
+}
+
+/* profile page */
+
+/* Profile info */
+
+.profile-background {
+    display: flex;
+    height: 230px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(216, 228, 251);
+    color: black;
+    font-size: 3rem;
+}
+
+.profile-img {
+    margin-top: -75px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.profile-school {
+    font-size: 25px;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-info p {
+    margin: 10px 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+/* posts page */
+
+.long-card {
+    position: relative;
+    height: 230px;
+    margin: 20px 50px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: left;
+    display: flex;
+}
+
+.long-card img {
+    height: 100%;
+    width: 30%;
+}
+
+.post-info {
+    position: relative;
+    width: 70%;
+}
+
+.post-info * {
+    text-align: left;
+    margin: 20px;
+}
+
+.detail-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.tag-list {
+    display: flex;
+    justify-content: left;
+    margin: 5px 20px;
+}
+
+.tag-list p {
+    margin: 0;
+    margin-right: 10px;
+    padding: 2px 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: rgb(213, 227, 250);
+    font-weight: 600;
+}
+
+.detail2 {
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail2 div {
+    margin: 0;
+    display: table;
+}
+
+.detail2 div * {
+    vertical-align: middle;
+    margin: 3px 2px;
+}
+
+.detail2 .content-detail * {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.detail2 .profile {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.detail2 img {
+    width: 20px;
+}
+
+/* post page */
+.post-background {
+    height: 300px;
+    width: 100%;
+    text-align: left;
+    color: black;
+    font-size: 3rem;
+    background-image: url("../images/thumbnail.png");
+    display: table;
+}
+
+.post-background .post-cover {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-left: 300px;
+}
+
+.post-background .post-cover h3{
+    text-align: left;
+}
+
+.post-background .post-cover p{
+    text-align: left;
+    font-size: 25px;
+}
+
+.post-content {
+    text-align: left;
+    margin: 100px 300px;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.postpage-element {
+    margin: 50px 300px;
+    margin-bottom: 20px;
+}
+
+.information {
+    padding-left: 300px;
+}
+
+.information * { 
+    text-align: left;
+}
+
+.attention span {
+    margin-right: 20px;
+}
+
+.post-profile {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.post-profile img {
+    border-radius: 50%;
+}
+
+.post-profile div {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.tolist {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 300px;
+    font-size: 20px;
+}
+
+/* universities page */
+
+/* university Card */
+
+.university-list {
+    display: flex;
+    margin-top: 120px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.university-card {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin: 50px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+.university-card img {
+    margin-top: 30px;
+}
+
+.university-card h1 {
+    margin: 15px 0;
+}
+
+.university-card p {
+    margin: 10px 0;
+}
+
+/* university page */
+
+/* University info */
+
+.university-background {
+    display: flex;
+    height: 230px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(157, 159, 162);
+    color: rgb(0, 45, 86);
+    font-size: 3rem;
+}
+
+.university-img {
+    margin-top: -75px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.university-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.university-info p {
+    margin: 2px 10px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+/* events page */
+
+.event-title {
+    display: flex;
+    align-items: center;
+}
+
+.event-title * {
+    margin: 0;
+}
+
+.event-title p {
+    width: 60px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 2px 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.event-title .ongoing {
+    background-color: rgb(213, 227, 250);
+}
+
+.event-title .coming {
+    background-color: rgb(249, 222, 161);
+}
+
+.event-title .closed {
+    background-color: rgb(237, 172, 164);
+}
+
+.event-title .end {
+    background-color: gray;
+    color: white;
+}
+
+.event-info * {
+    margin: 10px 20px;
+}
+
+.event-info .event-love {
+    margin-left: 20px;
+    display: table;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.event-info .event-love * {
+    vertical-align: middle;
+    margin: 0;
+}
+
+.event-info img {
+    width: 20px;
+}
+
+/* event page */
+
+.attend {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Page buttons */
+
+.page-buttons {
+    margin: 20px 0;
+}
+
+.page-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  .page-buttons a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .page-buttons .none {
+    background-color: gray;
+    color: white;
+  }
+  
+  .page-buttons .selected {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .page-buttons .arrow {
+    border-radius: 50%;
+    background-color:gray;
+    color: white;
+    padding: 5px 12px;
+  }
+
+  .page-buttons #hide  {
+    visibility: hidden;
+  }
+
+/* footer */
+
+.footer {
+    margin-top: 500px;
+    clear: both;
+    width: 100%;
+    height: 40px;
+    display: table;
+    background-color: lightgray;
+    font-size: 15px;
+}
+
+.footer span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#global-footer {
+    margin-top: 150px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>UniVelog-대학교 목록</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5f03d8662e.js" crossorigin="anonymous"></script>
+
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- scripts -->
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+  <!-- Search Box -->
+  <div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeSearch()" title="Close Overlay" style="cursor:pointer;">x</span>
+    <div class="overlay-content">
+      <i class="fas fa-search"></i>
+      <form action="#">
+        <input type="text" name="search" placeholder="검색어를 입력하세요">
+      </form>
+    </div>
+  </div>
+
+  <!-- Nav Bar -->
+  <div class="nav-bar">
+    <a href="index.html" class="title">UniVelog</a>
+    <ul class="nav-list">
+      <li><a href="posts.html">Posts</a></li>
+      <li><a href="universities.html" style="color: #34A853;">Universites</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a onclick="openSearch()" style="cursor:pointer;"><img src="images/search.png" width="20px" alt="검색"></a></li>
+      <li><a href="login.html" id="login">로그인</a></li>
+    </ul>
+  </div>
+
+  <!-- University Card -->
+  <div role="main" class="container">
+    <div class="university-list">
+      <div class="university-card" onclick="location.href ='university.html'" style="cursor:pointer;">
+        <img src="images/HUFS.gif" alt="한국외대 로고" width="180px" height="180px">
+        <h1>한국외국어대학교</h1>
+        <p>회원수 00명</p>
+        <p>게시글 00개</p>
+        <p>최신글 2020년 00월 00일</p>
+      </div>
+      <div class="university-card">
+        <img src="images/SNU.png" alt="서울대 로고" width="180px" height="180px">
+        <h1>서울대학교</h1>
+        <p>회원수 00명</p>
+        <p>게시글 00개</p>
+        <p>최신글 2020년 00월 00일</p>
+      </div>
+      <div class="university-card">
+        <img src="images/Harvard.jpeg" alt="하버드대 로고" width="180px" height="180px">
+        <h1>하버드대학교</h1>
+        <p>회원수 00명</p>
+        <p>게시글 00개</p>
+        <p>최신글 2020년 00월 00일</p>
+      </div>
+    </div>
+
+    <!-- Page buttons -->
+    <div class="page-buttons">
+      <a href="#" class="arrow" id="hide">&#8249;</a>
+      <a href="#" class="selected">1</a>
+      <a href="#" class="none">2</a>
+      <a href="#" class="none">3</a>
+      <a href="#" class="none">4</a>
+      <a href="#" class="none">5</a>
+      <a href="#" class="arrow">&#8250;</a>
+    </div>
+  </div>
+
+  <footer class="footer" id="global-footer">
+    <span>Copyright © WH CHOI. All rights reserved.</span>
+  </footer>
+</body>
+
+</html>

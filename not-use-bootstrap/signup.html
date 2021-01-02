@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>UniVelog-회원가입</title>
+    <style>
+        html,
+        body {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            place-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <table border="1">
+            <tr>
+                <th colspan="4">회원가입</th>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td colspan="3"><input type="email" name="email" placeholder="이메일을 입력해주세요" required></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="password" name="pw" placeholder="비밀번호를 입력해주세요"></td>
+                <td>비밀번호확인</td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" placeholder="이름을 입력해주세요"></td>
+                <td>성별</td>
+                <td><input type="radio" name="gender" value="male">남<input type="radio" name="gender" value="female">여
+                </td>
+            </tr>
+            <tr>
+                <td>전화번호</td>
+                <td><input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="000-0000-0000"></td>
+                <td>휴대폰 번호</td>
+                <td><input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="000-0000-0000"></td>
+            </tr>
+            <tr>
+                <td>사는지역</td>
+                <td>
+                    <select name="region">
+                        <option value="seoul">서울</option>
+                        <option value="pusan">부산</option>
+                        <option value="daejeon">대전</option>
+                        <option value="daegu">대구</option>
+                        <option value="gwangju">광주</option>
+                        <option value="etc">기타</option>
+                    </select>
+                </td>
+                <td>생년원일</td>
+                <td><input type="date" name="birth"></td>
+            </tr>
+            <tr>
+                <td>학교</td>
+                <td colspan="3"><input type="text" placeholder="대학교 이름을 입력해주세요"></td>
+            </tr>
+            <tr>
+                <td>학적</td>
+                <td colspan="3">
+                    <label><input type="checkbox" name="hobby1" value="game">재학</label>
+                    <label><input type="checkbox" name="hobby2" value="travel">휴학</label>
+                    <label><input type="checkbox" name="hobby3" value="movie">졸업</label>
+                    <label><input type="checkbox" name="hobby4" value="reading">졸업유예</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><label for="memo">간단 자기소개</label><br><textarea name="memo" id="memo" cols="60"
+                        rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="submit" value="등록"><input type="reset" value="초기화">
+                <td><a href="login.html"><input type="button" value="취소"></a></td>
+        </table>
+    </form>
+    <footer>
+        <p>Copyright © WH CHOI. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

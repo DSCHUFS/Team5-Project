@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>UniVelog-이벤트</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5f03d8662e.js" crossorigin="anonymous"></script>
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- scripts -->
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <!-- Search Box -->
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay" style="cursor:pointer;">x</span>
+        <div class="overlay-content">
+            <i class="fas fa-search"></i>
+            <form action="#">
+                <input type="text" name="search" placeholder="검색어를 입력하세요">
+            </form>
+        </div>
+    </div>
+
+    <!-- Nav Bar -->
+    <div class="nav-bar">
+        <a href="index.html" class="title">UniVelog</a>
+        <ul class="nav-list">
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="universities.html">Universites</a></li>
+            <li><a href="events.html" style="color: #34A853;">Events</a></li>
+            <li><a onclick="openSearch()" style="cursor:pointer;"><img src="images/search.png" width="20px"
+                        alt="검색"></a></li>
+            <li><a href="login.html" id="login">로그인</a></li>
+        </ul>
+    </div>
+
+    <!-- Main -->
+    <div role="main" class="container">
+        <!-- Content -->
+        <div class="content">
+            <div class="long-card" onclick="location.href ='event.html'" style="cursor:pointer;">
+                <img src="images/thumbnail.png" alt="thumbnail">
+                <div class="post-info">
+                    <div class="event-title">
+                        <h2>이벤트1 제목</h2>
+                        <p class="ongoing">진행중</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="detail-info event-info">
+                        <p>장소 : 경기도 용인시 처인구...</p>
+                        <p>일시 : 2020년 00월 00일</p>
+                        <div class="event-love">
+                            <img src="images/love.png" alt="좋아요"><span> 100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="long-card">
+                <img src="images/thumbnail.png" alt="thumbnail">
+                <div class="post-info">
+                    <div class="event-title">
+                        <h2>이벤트2 제목</h2>
+                        <p class="coming">진행 예정</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="detail-info event-info">
+                        <p>장소 : 경기도 용인시 처인구...</p>
+                        <p>일시 : 2020년 00월 00일</p>
+                        <div class="event-love">
+                            <img src="images/love.png" alt="좋아요"><span> 100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="long-card">
+                <img src="images/thumbnail.png" alt="thumbnail">
+                <div class="post-info">
+                    <div class="event-title">
+                        <h2>이벤트3 제목</h2>
+                        <p class="closed">신청 마감</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="detail-info event-info">
+                        <p>장소 : 경기도 용인시 처인구...</p>
+                        <p>일시 : 2020년 00월 00일</p>
+                        <div class="event-love">
+                            <img src="images/love.png" alt="좋아요"><span> 100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="long-card">
+                <img src="images/thumbnail.png" alt="thumbnail">
+                <div class="post-info">
+                    <div class="event-title">
+                        <h2>이벤트4 제목</h2>
+                        <p class="end">종료</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="detail-info event-info">
+                        <p>장소 : 경기도 용인시 처인구...</p>
+                        <p>일시 : 2020년 00월 00일</p>
+                        <div class="event-love">
+                            <img src="images/love.png" alt="좋아요"><span> 100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="long-card">
+                <img src="images/thumbnail.png" alt="thumbnail">
+                <div class="post-info">
+                    <div class="event-title">
+                        <h2>이벤트5 제목</h2>
+                        <p class="end">종료</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="detail-info event-info">
+                        <p>장소 : 경기도 용인시 처인구...</p>
+                        <p>일시 : 2020년 00월 00일</p>
+                        <div class="event-love">
+                            <img src="images/love.png" alt="좋아요"><span> 100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="long-card">
+                <img src="images/thumbnail.png" alt="thumbnail">
+                <div class="post-info">
+                    <div class="event-title">
+                        <h2>이벤트6 제목</h2>
+                        <p class="end">종료</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <div class="detail-info event-info">
+                        <p>장소 : 경기도 용인시 처인구...</p>
+                        <p>일시 : 2020년 00월 00일</p>
+                        <div class="event-love">
+                            <img src="images/love.png" alt="좋아요"><span> 100</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page buttons -->
+            <div class="page-buttons">
+                <a href="#" class="arrow" id="hide">&#8249;</a>
+                <a href="#" class="selected">1</a>
+                <a href="#" class="none">2</a>
+                <a href="#" class="none">3</a>
+                <a href="#" class="none">4</a>
+                <a href="#" class="none">5</a>
+                <a href="#" class="arrow">&#8250;</a>
+            </div>
+        </div>
+
+        <!-- Side bar -->
+        <div class="sidebar">
+            <ol class="sidebar-list">
+                <lh><span>인기 이벤트</span></lh>
+                <li><a href="post.html"><b>1</b> 이벤트 제목 1</a></li>
+                <li><a href=""><b>2</b> 이벤트 제목 2</a></li>
+                <li><a href=""><b>3</b> 이벤트 제목 3</a></li>
+                <li><a href=""><b>4</b> 이벤트 제목 4</a></li>
+                <li><a href=""><b>5</b> 이벤트 제목 5</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <footer class="footer" id="global-footer">
+        <span>Copyright © WH CHOI. All rights reserved.</span>
+    </footer>
+</body>
+
+</html>
