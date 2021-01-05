@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>UniVelog-로그인</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5f03d8662e.js" crossorigin="anonymous"></script>
+
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="css/login.css">
+
+  <!-- scripts -->
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <a href="javascript:history.back()" class="exitbtn" style="cursor:pointer;">x</a>
+    <div class="title" style="cursor:pointer;" onclick="location.href ='index.html'">
+      UniVelog
+    </div>
+    <form action="#">
+      <div class="subtitle">
+        Log-in
+      </div>
+      <div class="field">
+        <input type="text" required>
+        <label>Email Address</label>
+      </div>
+      <div class="field">
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+      <div class="content">
+        <div class="checkbox">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me">Remember me</label>
+        </div>
+        <div class="pass-link">
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+      <div class="field">
+        <input type="submit" value="로그인">
+      </div>
+      <div class="signup-link">
+        아직 회원이 아니신가요? <a href="signup.html">회원가입</a>
+      </div>
+      <hr>
+      <h3>소셜 로그인</h3>
+      <div class="social">
+        <a href="#"><img src="images/github.png" alt="github"></a>
+        <a href="#"><img src="images/google-plus.png" alt="google"></a>
+        <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
